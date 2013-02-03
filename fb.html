@@ -16,7 +16,12 @@
 		<link rel="shortcut icon" href="ico/favicon.png">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script></script>
+		<script src="js/script.js"></script>
+		<script>ResourceList({
+			"jquery":[src:"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js",type:"js"],
+			"bootstrap":[src:"js/bootstrap.min.js",type:"js"],
+			"main":[src:"js/script.js",type:"js"]
+		});</script>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -42,6 +47,7 @@
 			<div class="row-fluid">
 				<div class="span3">
 					left
+					<script>LoremIpsum("test ",1000,10,"<br /><br />");renderPagelet({id:1,resources:["jquery","main"],html:'<a href=""></a>'});</script>
 				</div>
 				<div class="span6">
 					middle
